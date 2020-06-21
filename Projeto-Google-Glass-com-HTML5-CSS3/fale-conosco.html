@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link rel="stylesheet" type="text/css" href="_css/estilo.css">  </Link>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"> </Link>
+
+    </head>
+
+    <script src="../projeto-glass-html5/_javascript/funcoes.js">  </script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt (document.getElementById ('cQuan').value); 
+            tot = qtd * 1500;
+            document.getElementById ('cTot').value = tot;
+        }
+    </script>
+
+<body>
+    <div id="interface">
+
+
+<header id="cabecalho">
+<hgroup> 
+ <h1>Google Glass </h1> 
+<h2>A revolução do Google está chegando</h2>
+</hgroup>
+
+<img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="">
+
+ <nav id="menu">
+    <h1> Menu Principal</h1>
+     <Ul>
+<li onmouseover="mudaimagem('_imagens/home.png')" onmouseout="mudaimagem('_imagens/contato.png')"> <a href="index.html"> Home</a> </li>
+<li onmouseover="mudaimagem('_imagens/especificacoes.png')" onmouseout="mudaimagem('_imagens/contato.png')"> <a href="specs.html"> Especificações</a> </li>
+<li onmouseover="mudaimagem('_imagens/fotos.png')" onmouseout="mudaimagem('_imagens/contato.png')"> <a href="fotos.html"> Fotos </a> </li>
+<li onmouseover="mudaimagem('_imagens/multimidia.png')" onmouseout="mudaimagem('_imagens/contato.png')"> <a href="multimidia.html"> Multimídia </a></li>
+<li onmouseover="mudaimagem('_imagens/contato.png')" onmouseout="mudaimagem('_imagens/contato.png')"> <a href="fale-conosco.html" > Fale conosco </a></li>
+    </Ul>
+</nav>
+</header>
+
+<section id="corpo-full">
+    <article> 
+          <header>
+               <hgroup>
+               <h3> Fale Conosco > Contato </h3>
+               <h1> Formulário de Contato </h1>
+               <h2> por Alexandre Henrique</h2>
+               <h3> Atualizado em 20/Abril/2020</h3>
+               </hgroup>
+           </header>
+
+<form method="POST" id="fContato" action="mailto:contato@xandevteste@gmail.com" oninput="calc_total();"> 
+   <fieldset id="usuario">
+    <legend> Identificação do Usuário </legend>
+    <p> Nome: <input type="text" name="tNome" id="cNome" size="50" maxlength="50" placeholder="Nome Completo"> </p>
+    <p> Senha: <input type="password" name="tSenha" id="cSenha" size="15" maxlength="15" placeholder="Digite sua senha"> </p>
+    <p> E-mail: <input type="email" name="sEmail" id="cEmail" size="30" maxlength="30" placeholder="Digite seu e-mail"> </p>
+
+    <fieldset id="sexo">
+        <legend> Sexo: </legend>
+        <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc"> Masculino </label> <br>
+        <input type="radio" name="tSexo" id="cFem"> <label for="cFem"> Feminino </label>
+    </fieldset> 
+    <p> Data de Nascimento: <input type="date" name="tNasc" id="cNasc"> </p>
+</fieldset>
+
+
+
+
+
+
+<fieldset id="endereco">
+<legend> Endereço do Usuário </legend>
+    <p>Logradouro: <input type="text" name="tRua" id="cRua" size="20" maxlength="40" placeholder="Rua, Av, Trav..."> </p> 
+    <p> Número: <input type="number" name="tNum" id="cNum" maxlength="5" min="0" max="99999" placeholder="Numero da Casa"> </p>
+    <p> Estado: <input type="text" name="tEst" id="cEst" size="15" maxlength="15" placeholder="Seu EStado"> </p>
+    <p> Cidade: <input type="text" name="tCid" id="cCid" maxlength="30" size="30" placeholder="Sua Cidade"> </p>
+</fieldset>
+
+
+
+<fieldset id="mensagem">
+<legend>Mensagem do Usuário </legend> 
+   <p> Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0" max="100" step="2"> Max </p>
+    <p> Mensagem: <textarea name="tMsg" id="cMsg" cols="50" rows="10" placeholder="Deixe sua Mensagem"></textarea> </p>
+</fieldset>
+
+
+
+<fieldset id="pedido">
+<legend> Quero um Google Glass </legend> 
+  <p> <input type="checkbox" name="tPed" id="cPed" checked> <label for="cPed">  Gostaria de adquirir um Google Glass quando disponível</label> </p>
+   <p> Cor: <input type="color"> </p>
+   <p> Quantidade: <input type="number" name="tQuan" id="cQuan" min="0" max="10"> </p>
+   <p> Preço Total: R$ <input type="text" name="tTot" id="cTot"> </p>
+</fieldset>
+ <input type="submit" value="ENVIAR">
+
+</form>
+
+<footer id="rodape">
+    <p> Copyright &copy; 2020 - by Alexandre Henrique <br>
+    <a href="https://www.instagram.com/xandehenrique_/?hl=pt-br" target="_blank"> Instagram </a> | <a href="https://www.linkedin.com/in/alexandre-henrique-575174163/" target="_blank"> Linkedin </a></p>
+    </footer>
+    </div>
+        
+    </body>
+    </html>

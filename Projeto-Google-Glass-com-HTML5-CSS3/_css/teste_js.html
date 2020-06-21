@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documeont</title>
+
+    <script>
+        function Acender () {
+           document.getElementById ('luz').src ='../_imagens/lampada-acesa.jpg'
+
+        }
+        // GETELEMENTBYId PUXA A ELEMENTO PELO SEU ID //
+
+
+        function Apagar () {
+            document.getElementById ('luz').src ='../_imagens/lampada-apagada.jpg'
+        }
+
+        function Quebra () {
+            document.getElementById ('luz').src = '../_imagens/lampada-quebrada.jpg'
+        }
+    </script>
+<style>
+    h1 {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+    }
+
+    img#luz {
+        position: absolute;
+        left: 600px;
+    }
+    
+</style>
+</head>
+<body>
+
+    <h1>Vamos Acender a Lâmpada</h1>
+    <img id="luz" src="../_imagens/lampada-apagada.jpg" onmousemove="Acender()" onmouseout="Apagar()" onclick="Quebra()">
+
+
+</body>
+</html>

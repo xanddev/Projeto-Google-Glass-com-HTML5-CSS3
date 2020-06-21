@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link rel="stylesheet" type="text/css" href="_css/estilo.css">  </Link>
+    <link rel="stylesheet" type="text/css" href="_css/specs.css"> </Link>
+    </head>
+
+    <script src="../projeto-glass-html5/_javascript/funcoes.js">  </script>
+
+<body>
+    <div id="interface">
+
+
+<header id="cabecalho">
+<hgroup> 
+ <h1>Google Glass </h1> 
+<h2>A revolução do Google está chegando</h2>
+</hgroup>
+
+<img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="">
+
+ <nav id="menu">
+    <h1> Menu Principal</h1>
+     <Ul>
+<li onmouseover="mudaimagem('_imagens/home.png')" onmouseout="mudaimagem('_imagens/especificacoes.png')"> <a href="index.html"> Home</a> </li>
+<li onmouseover="mudaimagem('_imagens/especificacoes.png')" onmouseout="mudaimagem('_imagens/especificacoes.png')"> <a href="specs.html"> Especificações</a> </li>
+<li onmouseover="mudaimagem('_imagens/fotos.png')" onmouseout="mudaimagem('_imagens/especificacoes.png')"> <a href="fotos.html"> Fotos </a> </li>
+<li onmouseover="mudaimagem('_imagens/multimidia.png')" onmouseout="mudaimagem('_imagens/especificacoes.png')"> <a href="multimidia.html"> Multimídia </a></li>
+<li onmouseover="mudaimagem('_imagens/contato.png')" onmouseout="mudaimagem('_imagens/especificacoes.png')"> <a href="fale-conosco.html" > Fale conosco </a></li>
+    </Ul>
+</nav>
+</header>
+
+<section id="corpo-full">
+ <article> 
+       <header>
+            <hgroup>
+            <h3> Glass > Especificações</h3>
+            <h1> Raio-X no Google Glass</h1>
+            <h2> por Alexandre Henrique</h2>
+            <h3> Atualizado em 20/Abril/2020</h3>
+            </hgroup>
+        </header>
+        <p> Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+        <section id="conteudo">  
+         <img src="./_imagens/glass-esquema-marcado.jpg" alt="imagem" usemap="#meumapa">
+         <map name="meumapa">
+            <area shape="rect" coords="179,202,270,260" href="_textos/google-glass-txt.html#tela" target="janela" alt="Google Glass">
+            <area shape="circle" coords="158,243,12" href="_textos/google-glass-txt.html#camera" target="janela" alt="Google Glass">
+            <area shape="circle" coords="73,52,12" href="_textos/google-glass-txt.html#gadgets" target="janela" alt="Google Glass">
+            <area shape="poly" coords="28,143,83,216,84,249,27,169" href="_textos/google-glass-txt.html#sensores" target="janela" alt="Google Glass">
+         </map>
+         <iframe src="_textos/google-glass-txt.html" name="janela" id="frame-spec" scrolling= 'no' ></iframe> <!--73, 52,11 -->  
+        </section> 
+ </article>
+</section>
+
+<footer id="rodape">
+    <p> Copyright &copy; 2020 - by Alexandre Henrique <br>
+    <a href="https://www.instagram.com/xandehenrique_/?hl=pt-br" target="_blank"> Instagram </a> | <a href="https://www.linkedin.com/in/alexandre-henrique-575174163/" target="_blank"> Linkedin </a></p>
+    </footer>
+    </div>
+        
+    </body>
+    </html>
